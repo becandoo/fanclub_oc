@@ -1,49 +1,127 @@
-<div class="row">
-  
-    <div class="col-md-4">
-      <div class="p-3 mb-3 swatch-primary">Primary</div>
-    </div>
-  
-    <div class="col-md-4">
-      <div class="p-3 mb-3 swatch-secondary">Secondary</div>
-    </div>
-  
-    <div class="col-md-4">
-      <div class="p-3 mb-3 swatch-success">Success</div>
-    </div>
-  
-    <div class="col-md-4">
-      <div class="p-3 mb-3 swatch-danger">Danger</div>
-    </div>
-  
-    <div class="col-md-4">
-      <div class="p-3 mb-3 swatch-warning">Warning</div>
-    </div>
-  
-    <div class="col-md-4">
-      <div class="p-3 mb-3 swatch-info">Info</div>
-    </div>
-  
-    <div class="col-md-4">
-      <div class="p-3 mb-3 swatch-light">Light</div>
-    </div>
-  
-    <div class="col-md-4">
-      <div class="p-3 mb-3 swatch-dark">Dark</div>
-    </div>
-  
-</div>
-<div class="row">
-  
-    <div class="col-md-12">
-<button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-secondary">Secondary</button>
-<button type="button" class="btn btn-success">Success</button>
-<button type="button" class="btn btn-danger">Danger</button>
-<button type="button" class="btn btn-warning">Warning</button>
-<button type="button" class="btn btn-info">Info</button>
-<button type="button" class="btn btn-light">Light</button>
-<button type="button" class="btn btn-dark">Dark</button>
+<div id="common-home" class="container">
 
-<button type="button" class="btn btn-link">Link</button>
+  <div class="row">
+    <aside id="column-left" class="col-sm-3 hidden-xs">
+      {{> categories-nav}}
+    </aside>
+
+    <div id="content" class="col-sm-9">
+
+      <h3>Featured</h3>
+      <div class="row">
+        <div class="product-layout col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <div class="product-thumb transition">
+            <div class="image"><a href="http://fanclubcreations.com/shop/index.php?route=product/product&amp;product_id=43"><img src="http://fanclubcreations.com/shop/image/cache/catalog/demo/macbook_1-200x200.jpg" alt="MacBook" title="MacBook" class="img-responsive"></a></div>
+            <div class="caption">
+              <h4><a href="http://fanclubcreations.com/shop/index.php?route=product/product&amp;product_id=43">MacBook</a></h4>
+              <p>
+
+                Intel Core 2 Duo processor Powered by an Intel Core 2 Duo processor at speeds up to 2.1..</p>
+              <p class="price">
+                $500.00
+              </p>
+            </div>
+            <div class="button-group">
+              <button type="button" onclick="cart.add('43');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">Add to Cart</span></button>
+              <button type="button" data-toggle="tooltip" title="" onclick="wishlist.add('43');" data-original-title="Add to Wish List"><i class="fa fa-heart"></i></button>
+              <button type="button" data-toggle="tooltip" title="" onclick="compare.add('43');" data-original-title="Compare this Product"><i class="fa fa-exchange"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="product-layout col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <div class="product-thumb transition">
+            <div class="image"><a href="http://fanclubcreations.com/shop/index.php?route=product/product&amp;product_id=40"><img src="http://fanclubcreations.com/shop/image/cache/catalog/demo/iphone_1-200x200.jpg" alt="iPhone" title="iPhone" class="img-responsive"></a></div>
+            <div class="caption">
+              <h4><a href="http://fanclubcreations.com/shop/index.php?route=product/product&amp;product_id=40">iPhone</a></h4>
+              <p>
+                iPhone is a revolutionary new mobile phone that allows you to make a call by simply tapping a nam..</p>
+              <p class="price">
+                $101.00
+              </p>
+            </div>
+            <div class="button-group">
+              <button type="button" onclick="cart.add('40');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">Add to Cart</span></button>
+              <button type="button" data-toggle="tooltip" title="" onclick="wishlist.add('40');" data-original-title="Add to Wish List"><i class="fa fa-heart"></i></button>
+              <button type="button" data-toggle="tooltip" title="" onclick="compare.add('40');" data-original-title="Compare this Product"><i class="fa fa-exchange"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="product-layout col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <div class="product-thumb transition">
+            <div class="image"><a href="http://fanclubcreations.com/shop/index.php?route=product/product&amp;product_id=30"><img src="http://fanclubcreations.com/shop/image/cache/catalog/demo/canon_eos_5d_1-200x200.jpg" alt="Canon EOS 5D" title="Canon EOS 5D" class="img-responsive"></a></div>
+            <div class="caption">
+              <h4><a href="http://fanclubcreations.com/shop/index.php?route=product/product&amp;product_id=30">Canon EOS 5D</a></h4>
+              <p>
+                Canon's press material for the EOS 5D states that it 'defines (a) new D-SLR category', while we'r..</p>
+              <p class="price">
+                <span class="price-new">$80.00</span> <span class="price-old">$100.00</span>
+              </p>
+            </div>
+            <div class="button-group">
+              <button type="button" onclick="cart.add('30');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">Add to Cart</span></button>
+              <button type="button" data-toggle="tooltip" title="" onclick="wishlist.add('30');" data-original-title="Add to Wish List"><i class="fa fa-heart"></i></button>
+              <button type="button" data-toggle="tooltip" title="" onclick="compare.add('30');" data-original-title="Compare this Product"><i class="fa fa-exchange"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="product-layout col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <div class="product-thumb transition">
+            <div class="image"><a href="http://fanclubcreations.com/shop/index.php?route=product/product&amp;product_id=43"><img src="http://fanclubcreations.com/shop/image/cache/catalog/demo/macbook_1-200x200.jpg" alt="MacBook" title="MacBook" class="img-responsive"></a></div>
+            <div class="caption">
+              <h4><a href="http://fanclubcreations.com/shop/index.php?route=product/product&amp;product_id=43">MacBook</a></h4>
+              <p>
+
+                Intel Core 2 Duo processor Powered by an Intel Core 2 Duo processor at speeds up to 2.1..</p>
+              <p class="price">
+                $500.00
+              </p>
+            </div>
+            <div class="button-group">
+              <button type="button" onclick="cart.add('43');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">Add to Cart</span></button>
+              <button type="button" data-toggle="tooltip" title="" onclick="wishlist.add('43');" data-original-title="Add to Wish List"><i class="fa fa-heart"></i></button>
+              <button type="button" data-toggle="tooltip" title="" onclick="compare.add('43');" data-original-title="Compare this Product"><i class="fa fa-exchange"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="product-layout col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <div class="product-thumb transition">
+            <div class="image"><a href="http://fanclubcreations.com/shop/index.php?route=product/product&amp;product_id=40"><img src="http://fanclubcreations.com/shop/image/cache/catalog/demo/iphone_1-200x200.jpg" alt="iPhone" title="iPhone" class="img-responsive"></a></div>
+            <div class="caption">
+              <h4><a href="http://fanclubcreations.com/shop/index.php?route=product/product&amp;product_id=40">iPhone</a></h4>
+              <p>
+                iPhone is a revolutionary new mobile phone that allows you to make a call by simply tapping a nam..</p>
+              <p class="price">
+                $101.00
+              </p>
+            </div>
+            <div class="button-group">
+              <button type="button" onclick="cart.add('40');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">Add to Cart</span></button>
+              <button type="button" data-toggle="tooltip" title="" onclick="wishlist.add('40');" data-original-title="Add to Wish List"><i class="fa fa-heart"></i></button>
+              <button type="button" data-toggle="tooltip" title="" onclick="compare.add('40');" data-original-title="Compare this Product"><i class="fa fa-exchange"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="product-layout col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <div class="product-thumb transition">
+            <div class="image"><a href="http://fanclubcreations.com/shop/index.php?route=product/product&amp;product_id=42"><img src="http://fanclubcreations.com/shop/image/cache/catalog/demo/apple_cinema_30-200x200.jpg" alt="Apple Cinema 30&quot;" title="Apple Cinema 30&quot;" class="img-responsive"></a></div>
+            <div class="caption">
+              <h4><a href="http://fanclubcreations.com/shop/index.php?route=product/product&amp;product_id=42">Apple Cinema 30"</a></h4>
+              <p>
+                The 30-inch Apple Cinema HD Display delivers an amazing 2560 x 1600 pixel resolution. Designed sp..</p>
+              <p class="price">
+                <span class="price-new">$90.00</span> <span class="price-old">$100.00</span>
+              </p>
+            </div>
+            <div class="button-group">
+              <button type="button" onclick="cart.add('42');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">Add to Cart</span></button>
+              <button type="button" data-toggle="tooltip" title="" onclick="wishlist.add('42');" data-original-title="Add to Wish List"><i class="fa fa-heart"></i></button>
+              <button type="button" data-toggle="tooltip" title="" onclick="compare.add('42');" data-original-title="Compare this Product"><i class="fa fa-exchange"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+</div>
