@@ -96,6 +96,14 @@ function sass() {
 }
 
 let webpackConfig = {
+  plugins: [
+      new webpack2.ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery',
+        'window.jQuery': 'jquery',
+        Popper: ['popper.js', 'default']
+      })
+  ],
   module: {
     rules: [
       {

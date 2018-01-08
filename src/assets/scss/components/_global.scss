@@ -1,0 +1,10 @@
+
+//change background color using color palette and mixin
+.swatch {
+    @include ui-bg-colors($theme-colors);
+}
+
+//text colors using mixin ui-colors
+.text {
+    @include ui-colors($theme-colors);
+  }
