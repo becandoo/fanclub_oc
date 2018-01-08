@@ -1,0 +1,12 @@
+.categories-nav {
+    background: #006084;
+    a {  
+        background: #006084;
+        border: 0;
+        color: $gray-300;
+        padding: 8px 12px;
+    }
+    .child {
+        margin-left: 30px;
+    }
+}
