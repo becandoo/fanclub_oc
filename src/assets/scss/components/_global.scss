@@ -8,3 +8,16 @@
 .text {
     @include ui-colors($theme-colors);
   }
+
+  /*cards*/
+.panel-group {
+    .card+.card {
+        margin-top: 5px;
+    }
+    .card-title {
+        margin-bottom: 0;
+        a {
+            color: $gray-700;
+        }
+    }
+}
