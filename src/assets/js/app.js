@@ -14,6 +14,7 @@ import Bootstrap from "bootstrap";
 // the line below
 //import './lib/foundation-explicit-pieces';
 import './lib/magnific-popup.js';
+import './lib/engraving.js';
 import './lib/custom.js';
 
 var today = new Date();
